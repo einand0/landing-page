@@ -1,5 +1,135 @@
+:root{
+    --dark-background-color: #1F2937;
+    --call-to-action-background-color: #3882F6;
+    --quote-section-backgrouund-color: #E5E7EB;
+
+    --button-color: #3882F6;
+
+    --header-logo-text: #F9FAF8;
+    --hero-main-text: #F9FAF8;
+    --hero-secondary-text: #E5E7EB;
+    --quote-text: #1F2937;
+    --information-header-text: #1F2937;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER  */
+
+header{
+    background-color: var(--dark-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+nav{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2{
+    font-size: 28px;
+    color: var(--hero-main-text);
+    font-weight: bolder;
+    text-transform:capitalize;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--hero-secondary-text);
+    transition: .8s;
+}
+
+nav ul li a:hover{
+    color: var(--button-color);
+}
+
+
+/* HERO section */
+
+#hero-section{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-background-color);
+}
+
+
+#hero-section-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#text-wrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 17px;
+}
+
+#text-wrapper h1{
+    color: var(--hero-main-text);
+    font-size: 48px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#text-wrapper p{
+    color: var(--hero-secondary-text);
+    font-size: 18px;
+}
+
+#text-wrapper button{
+    background-color: var(--button-color);
+    border: none;
+    width: 110px;
+    height: 39px;
+    border-radius: 10px;
+    color: var(--hero-secondary-text);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#text-wrapper button:hover{
+    background-color: #124aa3;
+    transform: scale(1.1);
+}
+
+
+#hero-section-image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-section-image img{
+    width: 80%;
 }
