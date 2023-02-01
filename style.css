@@ -1,4 +1,4 @@
-:root{
+:root {
     --dark-background-color: #1F2937;
     --call-to-action-background-color: #3882F6;
     --quote-section-backgrouund-color: #E5E7EB;
@@ -12,7 +12,7 @@
     --information-header-text: #1F2937;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,7 +22,7 @@
 
 /* HEADER  */
 
-header{
+header {
     background-color: var(--dark-background-color);
     display: flex;
     justify-content: center;
@@ -30,41 +30,41 @@ header{
     padding: 15px 50px;
 }
 
-nav{
+nav {
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav h2{
+nav h2 {
     font-size: 28px;
     color: var(--hero-main-text);
     font-weight: bolder;
-    text-transform:capitalize;
+    text-transform: capitalize;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     gap: 30px;
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: var(--hero-secondary-text);
     transition: .8s;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: var(--button-color);
 }
 
 
 /* HERO section */
 
-#hero-section{
+#hero-section {
     height: 80vh;
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@ nav ul li a:hover{
 }
 
 
-#hero-section-text{
+#hero-section-text {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@ nav ul li a:hover{
     justify-content: center;
 }
 
-#text-wrapper{
+#text-wrapper {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -90,7 +90,7 @@ nav ul li a:hover{
     gap: 17px;
 }
 
-#text-wrapper h1{
+#text-wrapper h1 {
     color: var(--hero-main-text);
     font-size: 48px;
     font-weight: bolder;
@@ -98,12 +98,12 @@ nav ul li a:hover{
     letter-spacing: 2px;
 }
 
-#text-wrapper p{
+#text-wrapper p {
     color: var(--hero-secondary-text);
     font-size: 18px;
 }
 
-#text-wrapper button{
+#text-wrapper button {
     background-color: var(--button-color);
     border: none;
     width: 110px;
@@ -117,19 +117,91 @@ nav ul li a:hover{
     transition: 1s;
 }
 
-#text-wrapper button:hover{
+#text-wrapper button:hover {
     background-color: #124aa3;
     transform: scale(1.1);
 }
 
 
-#hero-section-image{
+#hero-section-image {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#hero-section-image img{
+#hero-section-image img {
     width: 80%;
+}
+
+
+/* INFORMATION GRID */
+
+#random-information-section {
+    min-height: 80vh;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#random-information-section h2 {
+    color: var(--information-header-text);
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+#information-grid {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.information-card {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.information-card p {
+    text-align: center;
+    color: var(--information-header-text);
+    font-size: 18px;
+}
+
+.information-card-image {
+    border: 3px solid var(--button-color);
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.image1 {
+    background-image: url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+
+.image2 {
+    background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80");
+}
+
+.image3 {
+    background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80");
+}
+
+.image4 {
+    background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+
+.information-card-image img {
+    width: 300px;
 }
